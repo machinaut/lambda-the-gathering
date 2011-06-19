@@ -35,7 +35,9 @@ func ValidSlotNumber(n int) bool {
     return n > 0 && n < 256
 }
 
-
 func main() {
     fmt.Println("AJR")
+    for _, c := range Deck {
+        fmt.Println(c)
+    }
 }

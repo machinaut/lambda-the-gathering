@@ -27,7 +27,6 @@ var Deck = []Card{
     Card{14, 'z', "zombie", "λi.λx.I υ[255-i]←x ν[255-i]←-1"},
 }
 
-
 func (c Card) f() {
     switch c.Short {
     case 'Z':
@@ -63,49 +62,37 @@ func (c Card) f() {
     }
 }
 
+func (c Card) String() string {
+    return fmt.Sprintf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
+}
 
 func (c Card) Z() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) I() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) s() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) D() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) g() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) p() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) S() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) K() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) i() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) d() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) a() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) h() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) c() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) r() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
 func (c Card) z() {
-    fmt.Printf("%c %02d %s %s", c.Short, c.Id, c.Name, c.Desc)
 }
