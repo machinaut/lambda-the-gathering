@@ -11,11 +11,12 @@ type Slot struct {
     val uint16
     vit int32
 }
-/*
+
 var (
-    slot = make([]uint8, 100)
+    u   = make([]Slot, 256) // proponent
+    υ   = make([]Slot, 256) // opponent
 )
-*/
+
 func (s Slot) alive() bool {
     return s.vit > 0
 }
@@ -30,9 +31,13 @@ func (s Slot) fun(v ...int) int {
     return 0
 }
 
-
 func ValidSlotNumber(n int) bool {
     return n > 0 && n < 256
+}
+
+func LeftApplication() {
+}
+func RightApplication() {
 }
 
 func main() {
