@@ -17,7 +17,7 @@ func RightApplication() {
 }
 
 func main() {
-    fmt.Println("AJR")
+    fmt.Println("Lambda: The Gathering version AJRAY")
     for _, c := range Deck {
         fmt.Println(c)
     }
